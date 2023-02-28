@@ -1,9 +1,8 @@
-<nav class="nav">
-	<div class="nav-center">
-		<h1 class="nav-title">Budget Calculator</h1>
-		<button type="button" class="nav-btn">
-			<i class="far fa-plus-square"></i>
-			Add item
-		</button>
-	</div>
-</nav>
+<script>
+	import NavBar from './NavBar.svelte';
+	import Title from './Title.svelte';
+</script>
+
+<NavBar />
+<Title title = "Add expense"/>
+<Title title = "Expense list"/>
