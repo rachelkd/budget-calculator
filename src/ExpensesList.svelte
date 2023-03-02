@@ -4,11 +4,19 @@
     export let expenses = [];
 </script>
 
+<style>
+    h2 {
+        text-transform: capitalize;
+    }
+</style>
+
 <section>
     <SectionTitle title="Expense list"/>
     <ul>
 		{#each expenses as expense}
-			<Expense />
+			<Expense {...expense} />
+            {:else}
+            <h2>currently, you have no expenses</h2> 
 		{/each}
 	</ul>
 </section>
