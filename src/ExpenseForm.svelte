@@ -14,9 +14,7 @@
             <input type="number" id="amount" />
         </div>
         <p class="form-empty">Please fill out all form fields</p>
-        <button type="submit" class="btn btn-block">
-        add expense
-        </button>
+        <button type="submit" class="btn btn-block">add expense</button>
         <button type = "button" class ="close-btn">
         <i class="fas fa-times" />
             close
