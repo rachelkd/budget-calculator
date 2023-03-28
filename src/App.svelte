@@ -34,16 +34,13 @@
 
 	function removeExpense(id){
 		expenses = expenses.filter(item => item.id !== id);
-		setLocalStorage();
 	}
 	function clearExpenses() {
 		expenses = [];
-		setLocalStorage();
 	}
 	function addExpense({name, amount}) {
 		let expense = { id: Math.random() * Date.now(), name, amount};
 		expenses = [expense, ...expenses];
-		setLocalStorage();
 	}
 	function setModifiedExpense(id) {
 		let expense = expenses.find(item => item.id === id);
