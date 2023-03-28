@@ -5,6 +5,7 @@
 	import ExpensesList from "./ExpensesList.svelte";
 	import Totals from "./Totals.svelte";
 	import ExpenseForm from "./ExpenseForm.svelte";
+	import Modal from "./Modal.svelte";
 	// Data
 	// import expensesData from "./expenses";
 	// Variables
@@ -85,3 +86,10 @@
 		Clear expenses
 	</button>
 </main>
+<!-- 
+<Modal>
+	<h1 slot = "header">hello world</h1>
+	<p slot="footer">
+		hello this is the footer
+	</p>
+</Modal> -->
