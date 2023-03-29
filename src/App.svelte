@@ -86,10 +86,3 @@
 		Clear expenses
 	</button>
 </main>
-<!-- 
-<Modal>
-	<h1 slot = "header">hello world</h1>
-	<p slot="footer">
-		hello this is the footer
-	</p>
-</Modal> -->
