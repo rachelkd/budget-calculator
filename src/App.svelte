@@ -78,7 +78,16 @@
 <NavBar {showForm}/>
 <main class="content">
 	{#if isFormOpen}
-		<ExpenseForm {addExpense} name = {setName} amount = {setAmount} {isEditing} {editExpense} {hideForm}/>
+	<Modal>
+		<ExpenseForm 
+		{addExpense} 
+		name = {setName} 
+		amount = {setAmount} 
+		{isEditing} 
+		{editExpense} 
+		{hideForm}/>
+	</Modal>
+		
 	{/if}
 	<Totals title = "Total expenses" total = {total}/>
 	<ExpensesList {expenses} />
