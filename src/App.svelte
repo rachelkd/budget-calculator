@@ -7,6 +7,7 @@
 	import ExpenseForm from "./ExpenseForm.svelte";
 	import Modal from "./Modal.svelte";
 	import Github from "./Github.svelte";
+	import GithubAwait from "./GithubAwait.svelte";
 	// Data
 	// import expensesData from "./expenses";
 	// Variables
@@ -78,8 +79,9 @@
 
 <NavBar {showForm}/>
 <main class="content">
-	<Github />
-	<!-- {#if isFormOpen}
+	<!-- <Github /> -->
+	<!-- <GithubAwait /> -->
+	{#if isFormOpen}
 	<Modal>
 		<ExpenseForm 
 		{addExpense} 
@@ -95,5 +97,5 @@
 	<ExpensesList {expenses} />
 	<button type="button" class = "btn btn-primary btn-block" on:click={clearExpenses}>
 		Clear expenses
-	</button> -->
+	</button>
 </main>
